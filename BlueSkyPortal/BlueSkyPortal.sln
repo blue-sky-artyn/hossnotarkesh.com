@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlueSkyPortal", "BlueSkyPortal\", "{AFEF8A08-00FC-4E5D-88C7-1E7992FB7DBA}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62679"
+		Debug.AspNetCompiler.PhysicalPath = "BlueSkyPortal\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62679\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62679"
+		Release.AspNetCompiler.PhysicalPath = "BlueSkyPortal\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62679\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62679"
+		SlnRelativePath = "BlueSkyPortal\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueSky", "..\..\bluesky-dll\bluesky-dll\BlueSky\BlueSky.csproj", "{865CEF99-0720-4AEC-8430-5A9BA9F635B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFEF8A08-00FC-4E5D-88C7-1E7992FB7DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFEF8A08-00FC-4E5D-88C7-1E7992FB7DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFEF8A08-00FC-4E5D-88C7-1E7992FB7DBA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFEF8A08-00FC-4E5D-88C7-1E7992FB7DBA}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{865CEF99-0720-4AEC-8430-5A9BA9F635B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865CEF99-0720-4AEC-8430-5A9BA9F635B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865CEF99-0720-4AEC-8430-5A9BA9F635B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865CEF99-0720-4AEC-8430-5A9BA9F635B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {122ED30B-9102-4BAE-BA35-105AC1F2BAC2}
+	EndGlobalSection
+EndGlobal

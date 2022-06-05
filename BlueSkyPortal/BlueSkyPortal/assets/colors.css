@@ -1,0 +1,48 @@
+﻿:root {
+
+    --background: #fdf7f4ff;
+    --background-dark: #674631ff;
+    --background-spacer: #f4d2b9ff;
+
+    --mobile-bg: #726358;
+    --mobile-bg-sub:#4c423b;
+
+    --btn: #f4d2b9ff;
+    --btn-hover: #191919ff;
+
+    --btn2: #c9a991;
+    
+    --border: #674631ff;
+
+    --menu-hover: #674631ff;
+    
+    --color-1: #726358ff;
+    --color-2: #c9a991ff;
+    --color-3: #f4d2b9ff;
+    --color-4: #674631ff;
+    --color-5: #fdf7f4ff;
+    
+    --text-bg-lighter: #222222ff;
+    --text-bg-light: #191919ff;
+    --text-bg-dark: #f4d2b9ff;
+    
+    --icon-color: #fdf7f4ff;
+    
+    --block-color: #fdf7f4ff;
+    
+    --portfolio-bg: #f4d2b9ff;
+    --Links: #f4d2b9ff;
+    
+    --social-icons-dark: #674631ff;
+
+    --scroll-btn: #f4d2b9b8;  /*with opacity percentage*/
+    --scroll-btn-border: #f4d2b9bf;  /*with opacity percentage*/
+  
+    --scroll-btn2: #fdf7f4b8;
+
+    --btn-color: #f4d2b9a6;
+
+    --transparent-bg: 2222222e;
+
+
+}

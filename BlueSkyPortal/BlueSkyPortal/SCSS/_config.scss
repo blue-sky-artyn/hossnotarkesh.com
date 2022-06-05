@@ -1,0 +1,48 @@
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+};
+
+@function set-text-color ($color) {
+    @if (lightness($color) > 40%) {
+        @return $text-bg-light;
+    } @else {
+        @return $text-bg-dark;
+    }
+};
+
+// -------------------------
+@function make-darker ($color) {
+    @return darken($color, 30%);
+};
+
+@function make-lighter ($color) {
+    @return lighten($color, 30%);
+};
+
+// -------------------------
+@mixin text-bg-dark  {
+    color: $text-bg-dark;
+}
+
+@mixin text-bg-light {
+    color: $text-bg-light;
+}
+
+//responsive
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content
+    }
+};
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content
+    }
+};
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content
+    }
+};

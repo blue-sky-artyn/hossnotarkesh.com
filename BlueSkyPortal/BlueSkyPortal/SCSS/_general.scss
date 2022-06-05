@@ -1,0 +1,113 @@
+body,html {
+    height: 100%;
+  }
+
+  .clearfix:before,.clearfix:after {
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  body {
+    font: {
+        size: 100%;
+        family: 'Open Sans', sans-serif;
+        weight: 400;
+    }
+    line-height: 1.7;
+    color: $text-bg-light;
+    overflow-x: visible;
+    overflow-y: visible;
+    background: $background;
+  }
+  
+  
+  li {
+    list-style: none;
+  }
+  
+  ol,ul {
+    list-style: none;
+  }
+  
+  p {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: .85em;
+  }
+  
+  
+  a {
+    cursor: pointer;
+    color: $color-1;
+    text-decoration: none;
+  }
+  
+  
+  /****************************
+  * HEADINGS
+  ****************************/
+  
+  
+  h1 {
+    margin: 10px 0;
+    font-weight: 600;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 3.5em;
+    margin-bottom: 25px;
+  }
+  
+  h2 {
+    margin: 10px 0;
+    font-weight: 600;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+  }
+  
+  h3 {
+    font-weight: 600;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    font-weight: 600;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  
+  h5 {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  h6 {
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+  
+  /* EXTRA LARGE HEADING */
+  .xl {
+    font-size: 6em;
+    color: $text-bg-lighter;
+  }

@@ -1,0 +1,43 @@
+﻿.error-msg {
+    color: red;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.row-space {
+    margin-top: 1.5rem;
+}
+.promotional-details {
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.date-show {
+    margin-left: 5px;
+}
+
+.date-header {
+    margin: 1.5rem;
+    width: 95% !important;
+}
+
+.order-details {
+    background-color: white;
+}
+
+.header-ribbon {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.header-ribbon p {
+    font-size: 1.3rem;
+}
+
+.logo-footer {
+    width: 120px;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+

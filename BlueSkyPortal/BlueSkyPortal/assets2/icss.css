@@ -1,0 +1,111 @@
+﻿@import "colors.css";
+
+
+.logo-sama {
+    text-align: center;
+}
+
+    .logo-sama h2 {
+        font-size: 30px;
+        letter-spacing: -3px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.5;
+        color: var(--color-3);
+    }
+
+        .logo-sama h2 span {
+            display: block;
+            font-size: 10px;
+            letter-spacing: 1px;
+            position: relative;
+            top: -12px;
+            color: var(--color-4);
+        }
+
+
+.review-cutomer {
+    padding: 2rem 2rem;
+}
+
+    .review-cutomer h4 {
+        font-size: 16px;
+    }
+
+.details-cutomer {
+    margin-top: 3rem;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.name-cutomer {
+    font-size: 10px;
+    margin-top: 3rem;
+    text-align: right;
+    margin-right: 3rem;
+    text-transform: capitalize;
+}
+
+.stars-rate {
+    width: 63%;
+    margin: 0 auto
+}
+
+    .stars-rate ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+.filled {
+    color: #ffcb23;
+}
+
+.footer-menu li a {
+    text-transform: uppercase;
+}
+
+.mainmenu__link span {
+    text-transform: uppercase;
+}
+
+.copyright-text {
+    font-size: 9px;
+}
+
+.heading__primary--main {
+    color: #e8b289;
+    text-shadow: #00000057 1px 1px;
+}
+
+.space-between-elements {
+    margin-top: 5rem;
+}
+
+.appointment-box {
+    font-weight: bold;
+}
+
+.service-desc {
+    font-size: 12px;
+    font-weight: 100;
+    padding: 1rem 5rem;
+}
+/* Calender */
+.calender-appo {
+    margin: 3rem 0;
+}
+.show-date {
+}
+
+.show-date-text {
+}
+
+    .show-date-text span {
+        color: red;
+        font-size: 12px;
+        margin: 0 1.5rem;
+    }
+
+.btn {
+    text-shadow: grey 1px 1px !important;
+}
