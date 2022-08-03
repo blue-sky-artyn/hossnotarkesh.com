@@ -1,0 +1,24 @@
+﻿    @import "colors.css";
+
+
+
+header {
+    background-color: #ffffff;
+}
+
+.header-ribbon {
+    background-color: #222222;
+}
+
+    .header-ribbon p {
+        color: white;
+    }
+
+.navbar-caption {
+    font-size: 2.5rem !important;
+}
+
+video {
+    width: 100% !important;
+    position: absolute !important;
+}

@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+
+
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css" />-->
+    <!-- Font Awesome core CSS -->
+    <!--<link rel="stylesheet" href="assets/css/font-awesome.min.css" />-->
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        .site-section.section-reviews {
+            padding-bottom: 0;
+        }
+
+        .site-section {
+            padding: 100px 0;
+        }
+
+            .site-section h2 {
+                font-family: "Varela", sans-serif;
+                margin: 0;
+                font-size: 32px;
+                color: #196fc2;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+        .section-subtitle {
+            position: relative;
+            font-family: "Varela", sans-serif;
+            margin: 15px 0 0;
+            font-size: 16px;
+            line-height: 16px;
+            color: #666;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .site-section.section-reviews .blue-bg {
+            margin-top: 50px;
+            padding: 70px 0px;
+        }
+
+        .blue-bg {
+            background-color: #196fc2;
+        }
+
+        .review-carousel {
+            padding: 0 50px;
+        }
+
+        .slick-slider {
+            position: relative;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .review-carousel .slick.rectangle.slick-prev {
+            left: 0;
+        }
+
+        .review-carousel .slick.rectangle {
+            position: absolute;
+            top: 50%;
+            width: 30px;
+            height: 30px;
+            box-shadow: none;
+            z-index: 99;
+            background-color: transparent;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+
+        .rectangle, .big-rectangle {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #dddddd;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -webkit-box-shadow: 4px 4px 0px 0px #dddddd;
+            -o-box-shadow: 4px 4px 0px 0px #dddddd;
+            -moz-box-shadow: 4px 4px 0px 0px #dddddd;
+            box-shadow: 4px 4px 0px 0px #dddddd;
+        }
+
+        .carousel-control.left i, .review-carousel .slick.rectangle.slick-prev i {
+            padding-right: 3px;
+        }
+
+        .rectangle i, .big-rectangle img, .rectangle span, .rectangle img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 22px;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+            -moz-transform: translate(-50%, -50%) rotate(-45deg);
+            -o-transform: translate(-50%, -50%) rotate(-45deg);
+            -ms-transform: translate(-50%, -50%) rotate(-45deg);
+        }
+        .slick-list {
+            position: relative;
+            overflow: hidden;
+        }
+        .slick-track:before, .slick-track:after {
+            display: table;
+            content: '';
+        }
+        .slick-initialized .slick-slide {
+            display: block;
+        }
+
+        .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+        .slick-track:after {
+            clear: both;
+        }
+
+        .slick-track:before, .slick-track:after {
+            display: table;
+            content: '';
+        }
+        .review-carousel .slick.rectangle.slick-next {
+            right: 0;
+        }
+
+        .review-carousel .slick.rectangle {
+            position: absolute;
+            top: 50%;
+            width: 30px;
+            height: 30px;
+            box-shadow: none;
+            z-index: 99;
+            background-color: transparent;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+
+        .rectangle, .big-rectangle {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #dddddd;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -webkit-box-shadow: 4px 4px 0px 0px #dddddd;
+            -o-box-shadow: 4px 4px 0px 0px #dddddd;
+            -moz-box-shadow: 4px 4px 0px 0px #dddddd;
+            box-shadow: 4px 4px 0px 0px #dddddd;
+        }
+
+        a, button {
+            -webkit-transition: all 0.25s ease-in-out;
+            -o-transition: all 0.25s ease-in-out;
+            -moz-transition: all 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out;
+            cursor: pointer;
+            outline: 0 none;
+        }
+        .carousel-control.right i, .review-carousel .slick.rectangle.slick-next i {
+            padding-left: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main content -->
+    
+        <!-- Reviews section -->
+        <section class="site-section section-reviews text-center">
+            <div class="container">
+                <h2>Client Reviews</h2>
+                <p class="section-subtitle"><span>OUR CLIENTS LOVE US! READ WHAT THEY HAVE TO SAY</span></p>
+            </div>
+
+            <div class="blue-bg">
+                <div class="container">
+                    <div class="review-carousel">
+                        <!-- Review 1 -->
+                        <div class="review">
+                            <div class="rectangle">
+                                <img src="assets/img/review.jpg" class="img-res" alt="">
+                            </div>
+                            <p>If there were 100 star rating I would leave 110. I have been building WP sites now full time for 7 years and in business for 12 and have never worked with such a solid company with such a wonderful set of themes.</p>
+                            <div class="review-author">
+                                <h3>Mike Taylor</h3>
+                                <p>CEO at Sports Portal</p>
+                            </div><!-- /.review-author -->
+                        </div><!-- /.review -->
+                        <!-- Review 2 -->
+                        <div class="review">
+                            <div class="rectangle">
+                                <img src="assets/img/review-2.jpg" class="img-res" alt="">
+                            </div>
+                            <p>Diana Johnson is a rare SEO consultant who does things the right way. I’ve been consistently impressed with her process, organization and strategic method of doing SEO the right way.</p>
+                            <div class="review-author">
+                                <h3>Anna Murray</h3>
+                                <p>CEO at Law firm</p>
+                            </div><!-- /.review-author -->
+                        </div><!-- /.review -->
+                    </div><!-- /.review-carousel -->
+                </div>
+            </div>
+        </section><!-- /.section-reviews -->
+        <!-- End Reviews section -->
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="js/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="js/js/bootstrap.min.js"></script>
+
+
+    <!-- Slick Carousel JS -->
+    <script src="js/js/slick.min.js"></script>
+
+    <!-- Touchswipe JS -->
+
+
+    <!-- Custom JS -->
+    <script src="js/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,521 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SingleMaster.master.cs" Inherits="SingleMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://hossnotarkesh.com/" />
+    <title>Hoss Notarkesh-Progressive Executive Business Coach</title>
+
+
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <link rel='dns-prefetch' href='//www.google.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="Hoss Notarkesh Progressive Executive Business Coach &raquo; Feed" href="https://hossnotarkesh.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Hoss Notarkesh Progressive Executive Business Coach &raquo; Comments Feed" href="https://hossnotarkesh.com/comments/feed/" />
+    <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+
+    <%-- Google Tag manager (Hoss) --%>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-358303761"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-358303761');
+    </script>
+
+    <!-- Google Tag Manager (Sama) -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NKD9Q4G');</script>
+    <!-- End Google Tag Manager -->
+
+
+
+    <!-- START META, DESCRIPTION, KEYWORDS, AUTHOR -->
+    <meta name="description" content="Sama Cosmetic Clinic,cosmetic specialists in Toronto and Richmond hill.Botox and Dysport injection.Filler services and Mesogold for men and women." />
+    <meta name="keywords" content="sama cosmetic clinic, Sama Cosmetic Clinic, Sama cosmetic clinic, Sama clinic, Sama cosmetic, cosmetic clinic, toronto cosmetic clinic, cosmetic surgery clinic, cosmetic clinic, the cosmetic surgery clinic, cosmetic clinic near me, richmond hill cosmetic clinic, cosmetic clinic in Richmond hill, cosmetic injector near me, cosmetic specialist, cosmetic clinic Richmond hill, cosmetic clinic newmarket, cosmetic clinic aurora, cosmetic clinic York, cosmetic clinic scarbrough, cosmetic clinic Brampton, cosmetic clinic Vaughan" />
+    <meta name="author" content="Farhad Taheri" />
+    <meta name="generator" content="Artyn Company - email:farhad.nic@yahoo.com" />
+    <meta name="Robots" content="index, follow" />
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="copyright" content="2022">
+    <meta name="rating" content="adult">
+    <link rel="alternate" href="https://hossnotarkesh.com" hreflang="en-us" />
+    <meta name="robots" content="index, follow">
+    <!-- END META, DESCRIPTION, KEYWORDS, AUTHOR -->
+
+
+    <!-- Site Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+
+
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+
+
+
+    <%--<link rel="preload" href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">--%>
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap">
+    </noscript>
+    <!-- START AJAX WEBFONTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <!-- END AJAX WEBFONTS -->
+
+
+
+    <!-- Website Theme  -->
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+    <!-- imported css -->
+    <link rel="stylesheet" href="assets/css/icss.css">
+    <link rel="stylesheet" href="assets/theme.css">
+
+
+    <%-- Bootstarp css --%>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+
+
+    <!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+	<![endif]-->
+
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+
+
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BeautySalon",
+          "name": "Sama Kariminia",
+          "image": "https://samacosmeticclinic.com/images/logo.jpg",
+          "@id": "",
+          "url": "https://samacosmeticclinic.com/",
+          "telephone": "+1(647)994-1392",
+          "priceRange": "50",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "43 First Commerce Dr",
+            "addressLocality": "Aurora",
+            "addressRegion": "ON",
+            "postalCode": "L4G 0G2",
+            "addressCountry": "CA"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 44.013031,
+            "longitude": -79.41245049999999
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "07:00"
+          },
+          "sameAs": [
+            "https://www.facebook.com/Sama-Cosmetic-Clinic-109109628060790",
+            "https://www.instagram.com/samacosmeticclinic",
+            "https://www.linkedin.com/in/sama-kariminia-15910833/?originalSubdomain=ca",
+            "https://samacosmeticclinic.com"
+          ] 
+        }
+    </script>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:image" content="https://samacosmeticclinic.com/images/logo.jpg">
+    <meta property="og:description" content="Sama Cosmetic Clinic, cosmetic physicians and specialists in North America – and in the Greater Toronto Area – with comprehensive skills and experience in beauty. Botox and Dysport injection. Filler services and Mesogold for men and women. Get rid of signs of ageing">
+    <meta property="business:contact_data:street_address" content="43 First Commerce Dr">
+    <meta property="business:contact_data:locality" content="Aurora">
+    <meta property="business:contact_data:region" content="ON">
+    <meta property="business:contact_data:postal_code" content="L4G 0G2">
+    <meta property="business:contact_data:country_name" content="Canada">
+
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Hoss Notarkesh-Progressive Executive Business Coach" />
+    <meta property="og:url" content="https://hossnotarkesh.com/" />
+    <meta property="og:site_name" content="Hoss Notarkesh Progressive Executive Business Coach" />
+    <meta property="article:modified_time" content="2022-04-24T12:39:28+00:00" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:label1" content="Est. reading time" />
+    <meta name="twitter:data1" content="10 minutes" />
+    <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://hossnotarkesh.com/#website","url":"https://hossnotarkesh.com/","name":"Hoss Notarkesh Progressive Executive Business Coach","description":"Business Strategist","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://hossnotarkesh.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-CA"},{"@type":"WebPage","@id":"https://hossnotarkesh.com/#webpage","url":"https://hossnotarkesh.com/","name":"Home - Hoss Notarkesh Progressive Executive Business Coach","isPartOf":{"@id":"https://hossnotarkesh.com/#website"},"datePublished":"2015-12-30T15:17:20+00:00","dateModified":"2022-04-24T12:39:28+00:00","breadcrumb":{"@id":"https://hossnotarkesh.com/#breadcrumb"},"inLanguage":"en-CA","potentialAction":[{"@type":"ReadAction","target":["https://hossnotarkesh.com/"]}]},{"@type":"BreadcrumbList","@id":"https://hossnotarkesh.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+
+
+
+
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="DgZbIPNtOXJEogxmTBbj2GOMq60kBu9h_JKO0AAK5E8" />
+
+    <!-- Google Analitics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159677233-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159677233-1');
+    </script>
+
+
+    <!-- Google Analytics (Tracking) -->
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'G-XNEYJEJCP2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+
+    <!-- Smartsupp Live Chat script -->
+    <%--<script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '316fcd6e4dc00330586eac0d6f747e1e48101dd9';
+        window.smartsupp || (function (d) {
+            var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+            s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+            c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <style>
+        .header-top {
+            display: none
+        }
+
+        .two-sides {
+        }
+
+        .socials-header-icon {
+        }
+
+            .socials-header-icon li {
+            }
+
+                .socials-header-icon li i {
+                }
+    </style>
+    <header>
+        <section class="header-top">
+            <div class="two-sides"><a href="tel:+14168343592">+1 (416) 834 3592</a></div>
+            <div class="two-sides">
+                <ul class="socials-header-icon">
+                    <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-vimeo-square" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-telegram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-youtube-square" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKD9Q4G"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Preloader Start -->
+    <%-- <div class="zakas-preloader active">
+        <div class="zakas-preloader-inner h-100 d-flex align-items-center justify-content-center">
+
+
+            <img src="images/gif/1.gif" alt="" />
+
+
+         <div class="zakas-child zakas-bounce1"></div>
+            <div class="zakas-child zakas-bounce2"></div>
+            <div class="zakas-child zuka-bounce3"></div>
+        </div>
+    </div>--%>
+    <!-- Preloader End -->
+
+    <%-- Check the device to open website --%>
+    <script type="text/javascript">
+        (function (window, document) {
+
+            if (navigator.userAgent.match(/(Android|iPod|iPhone|iPad|BlackBerry|IEMobile|Opera Mini)/)) {
+                document.body.className += " using-mobile-browser ";
+            }
+
+            if (!("ontouchstart" in window)) {
+
+                var body = document.querySelector("body");
+                var winW = window.innerWidth;
+                var bodyW = body.clientWidth;
+
+                if (winW > bodyW + 4) {
+                    body.setAttribute("style", "--scroll-bar-w: " + (winW - bodyW - 4) + "px");
+                } else {
+                    body.setAttribute("style", "--scroll-bar-w: 0px");
+                }
+            }
+
+        })(window, document);
+    </script>
+    <%-- End Check the device to open website --%>
+
+    <form id="form1" runat="server">
+        <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
+
+
+
+        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a>
+                            <img src="images/logo.png" alt="Hoss Notarkesh" style="height: 3.8rem;">
+                        </a>
+                    </span>
+                    <span class="navbar-caption-wrap">
+                        <a class="navbar-caption text-white display-4" href="default.aspx">HOSS NOTARKESH
+                    </a>
+                    </span>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="default.aspx">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="packages.aspx">PACKAGES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="testimonials.aspx">TESTIMONIALS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="bio.aspx">BIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="contact.aspx">
+                            <i class="fa fa-address-book mbr-iconfont mbr-iconfont-btn menu-icons " aria-hidden="true"></i>
+                            CONTACT US
+                    </a>
+                    </li>
+                </ul>
+                <%--<div class="navbar-buttons mbr-section-btn">
+                <a class="btn btn-sm btn-primary display-4" href="#">
+                    <span class="mbri-save mbr-iconfont mbr-iconfont-btn "></span>
+                    Try It Now!
+                </a>
+            </div>--%>
+            </div>
+        </nav>
+    </section>
+
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+
+        <section class="cid-qTkAaeaxX5" id="footer1-2">
+    <div class="container">
+        <div class="media-container-row content text-white">
+            <div class="col-12 col-md-3">
+                <div class="media-wrap">
+                    <a href="default.aspx">
+                        <img src="images/logo.jpg" alt="Hoss Notarkesh">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Address
+                </h5>
+                <p class="mbr-text">
+                    1234 Street Name
+                    <br>City, AA 99999
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Contacts
+                </h5>
+                <p class="mbr-text">
+                    Email: support@mobirise.com
+                    <br>Phone: +1 (0) 000 0000 001
+                    <br>Fax: +1 (0) 000 0000 002
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Links
+                </h5>
+                <p class="mbr-text">
+                    <a class="text-primary" href="#">Website builder</a>
+                    <br><a class="text-primary" href="#">Download for Windows</a>
+                    <br><a class="text-primary" href="#">Download for Mac</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-sm-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        © Copyright 2022 Decoton Co (<a href="mailto:farhad.nic@yahoo.com">Farhad Taheri</a>) - All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-list align-right">
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Global Overlay Start -->
+    <div class="zakas-global-overlay"></div>
+    <!-- Global Overlay End -->
+
+
+
+
+
+
+
+
+        <section class="display-7" style="padding: 0; align-items: center; justify-content: center; flex-wrap: wrap; align-content: center; display: flex; position: relative; height: 4rem;"><a href="https://mobiri.se/" style="flex: 1 1; height: 4rem; position: absolute; width: 100%; z-index: 1;">
+            <img alt="" style="height: 4rem;" src=""></a>
+            <p style="margin: 0; text-align: center;" class="display-7">Designed and coded by </p>
+            <a style="display: none;" href="https://mobirise.com/website-design-software.html"></a>
+            <a style="z-index: 1" href="#"> Decoton Co.</a></section>
+        <script src="assets/popper/popper.min.js"></script>
+        <script src="assets/web/assets/jquery/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/tether/tether.min.js"></script>
+        <script src="assets/smoothscroll/smooth-scroll.js"></script>
+        <script src="assets/dropdown/js/nav-dropdown.js"></script>
+        <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+        <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+        <script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
+        <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+        <script src="assets/parallax/jarallax.min.js"></script>
+        <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+        <script src="assets/mbr-clients-slider/mbr-clients-slider.js"></script>
+        <script src="assets/datatables/jquery.data-tables.min.js"></script>
+        <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+        <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+        <script src="assets/sociallikes/social-likes.js"></script>
+        <script src="assets/theme/js/script.js"></script>
+
+
+    </form>
+</body>
+</html>

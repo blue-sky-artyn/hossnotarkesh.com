@@ -416,7 +416,7 @@ nav .mbr-section-btn {
 
 /*! Full-screen */
 .mbr-fullscreen .mbr-overlay {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .mbr-fullscreen {

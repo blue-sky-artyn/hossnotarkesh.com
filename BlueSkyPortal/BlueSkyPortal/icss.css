@@ -41,3 +41,323 @@
     opacity: 0.8;
 }
 
+/* New mobris */
+.row {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+}
+
+.cid-tb9xis6KRl .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    flex-direction: column;
+}
+.item {
+    position: relative;
+}
+.cid-tb9xis6KRl .icon-box {
+    margin-bottom: 1rem;
+    text-align: center;
+    display: inline-block;
+}
+.cid-tb9xis6KRl span {
+    font-size: 10rem;
+    color: #6592e6;
+    font-weight: bold;
+    display: block;
+}
+
+.cid-tb9xis6KRl .text-box {
+    text-align: center;
+}
+
+.mbr-black {
+    color: #111111;
+}
+b, strong {
+    font-weight: bold;
+}
+
+
+.mbr-black {
+    color: #111111;
+}
+
+
+
+section, .container, .container-fluid {
+    position: relative;
+    word-wrap: break-word;
+}
+.cid-t6WDPRHuh2 .content-wrapper {
+    background: #fafafa;
+}
+.cid-t6WDPRHuh2 .image-wrapper img {
+    width: 100%;
+    object-fit: cover;
+}
+
+img, iframe {
+    display: block;
+    width: 100%;
+}
+
+
+.display-1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 4.6rem;
+    line-height: 1.1;
+}
+.display-2 {
+    font-family: 'Jost', sans-serif;
+    font-size: 2rem !important;
+    line-height: 1.1;
+}
+
+.display-4 {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.display-5 {
+    font-family: 'Jost', sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.5;
+}
+
+.display-7 {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+
+.mb-4 {
+    margin-bottom: 2rem !important;
+}
+
+.mbr-section-btn {
+    margin-left: -0.6rem;
+    margin-right: -0.6rem;
+    font-size: 0;
+}
+.btn-primary, .btn-primary:active {
+    background-color: #6592e6 !important;
+    border-color: #6592e6 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+}
+
+.btn {
+    font-weight: 600;
+    border-width: 1px;
+    font-style: normal;
+    margin: 0.6rem 0.6rem;
+    white-space: normal;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+}
+.cid-t6WEr2mcoJ {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+}
+.mt-4 {
+    margin-top: 2rem !important;
+}
+
+.justify-content-center {
+    -webkit-justify-content: center;
+}
+
+.align-center {
+    text-align: center;
+}
+.card {
+    background-color: transparent;
+    border: none !important;
+}
+
+.cid-t6WEr2mcoJ .card-wrapper {
+    margin-bottom: 2rem;
+    display: flex;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+.card-wrapper, .item-wrapper {
+    overflow: hidden;
+}
+
+.card-wrapper {
+    -webkit-flex: 1;
+}
+
+.cid-t6WEr2mcoJ .image-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.cid-t6WEr2mcoJ .mbr-iconfont {
+    font-size: 2rem;
+    padding-right: 1.5rem;
+    color: #6592e6;
+}
+
+[class^="mobi-"], [class*=" mobi-"] {
+    font-family: 'Moririse2' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-4, .display-5, .display-7, span, p, a {
+    line-height: 1;
+    word-break: break-word;
+    word-wrap: break-word;
+    font-weight: 400;
+}
+.mbr-text {
+    font-style: normal;
+    line-height: 1.7;
+}
+a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-caption) {
+    position: relative;
+    background-image: transparent;
+    background-size: 10000px 2px;
+    background-repeat: no-repeat;
+    background-position: 0px 1.2em;
+    background-position: -10000px 1.2em;
+}
+
+.text-primary {
+    color: #6592e6 !important;
+}
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.alert-success {
+    background-color: #70c770;
+}
+
+.alert {
+    color: #ffffff;
+    border-radius: 0;
+    border: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1.875rem;
+    padding: 1.25rem;
+    position: relative;
+    text-align: center;
+}
+.alert-danger {
+    background-color: #ff9966;
+}
+
+.alert {
+    color: #ffffff;
+    border-radius: 0;
+    border: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1.875rem;
+    padding: 1.25rem;
+    position: relative;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.form-control {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.form-control, form .btn {
+    min-height: 35px;
+}
+
+.form-control {
+    background-color: #ffffff;
+    background-clip: border-box !important;
+    color: #232323;
+    line-height: 1rem !important;
+    height: auto !important;
+    padding: 0.6rem 1.2rem !important;
+    transition: border-color 0.25s ease 0s !important;
+    border: 1px solid transparent !important;
+    border-radius: 4px !important;
+    box-shadow: rgb(0 0 0 / 7%) 0px 1px 1px 0px, rgb(0 0 0 / 7%) 0px 1px 3px 0px, rgb(0 0 0 / 3%) 0px 0px 0px 1px;
+}
+.cid-t6WED7UAns {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #ffffff;
+}
+
+em > span > img {
+    margin: 0 auto;
+}
+
+p {
+    line-height: 30px !important;
+}
+@media (min-width: 992px) {
+    .row {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+        .row > [class*=col] {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .cid-t6WDPRHuh2 .content-wrapper {
+        padding: 5rem 3rem;
+    }
+        .cid-t6WDPRHuh2 .content-wrapper .text-wrapper {
+            padding-left: 2rem;
+        }
+    .cid-t6WEr2mcoJ .card-wrapper {
+        padding: 2rem 4rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .container-fluid {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}

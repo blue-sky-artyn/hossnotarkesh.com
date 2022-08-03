@@ -1,0 +1,6 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^samacosmeticclinic.com/[nc]
+RewriteRule ^(.*)$ http://www.samacosmeticclinic.com//$1 [r=301,nc]
+ 
