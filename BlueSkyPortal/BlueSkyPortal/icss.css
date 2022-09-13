@@ -128,7 +128,7 @@ img, iframe {
 
 .display-7 {
     font-family: 'Jost', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.5;
 }
 
@@ -359,5 +359,14 @@ p {
     .container-fluid {
         padding-left: 32px;
         padding-right: 32px;
+    }
+    .navbar-caption {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 428px) {
+    .navbar-caption {
+        font-size: 1.5rem !important;
     }
 }

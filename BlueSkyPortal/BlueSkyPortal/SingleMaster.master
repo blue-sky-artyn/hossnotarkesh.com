@@ -34,21 +34,21 @@
     </script>
 
     <!-- Google Tag Manager (Sama) -->
-    <script>(function (w, d, s, l, i) {
+    <%--<script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
                     new Date().getTime(), event: 'gtm.js'
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NKD9Q4G');</script>
+        })(window, document, 'script', 'dataLayer', 'GTM-NKD9Q4G');</script>--%>
     <!-- End Google Tag Manager -->
 
 
 
     <!-- START META, DESCRIPTION, KEYWORDS, AUTHOR -->
-    <meta name="description" content="Sama Cosmetic Clinic,cosmetic specialists in Toronto and Richmond hill.Botox and Dysport injection.Filler services and Mesogold for men and women." />
-    <meta name="keywords" content="sama cosmetic clinic, Sama Cosmetic Clinic, Sama cosmetic clinic, Sama clinic, Sama cosmetic, cosmetic clinic, toronto cosmetic clinic, cosmetic surgery clinic, cosmetic clinic, the cosmetic surgery clinic, cosmetic clinic near me, richmond hill cosmetic clinic, cosmetic clinic in Richmond hill, cosmetic injector near me, cosmetic specialist, cosmetic clinic Richmond hill, cosmetic clinic newmarket, cosmetic clinic aurora, cosmetic clinic York, cosmetic clinic scarbrough, cosmetic clinic Brampton, cosmetic clinic Vaughan" />
+    <meta name="description" content="Business coach and business executive, business training, Raise the business profitability." />
+    <meta name="keywords" content="Hoss Notarkesh, Business coach, business executive" />
     <meta name="author" content="Farhad Taheri" />
     <meta name="generator" content="Artyn Company - email:farhad.nic@yahoo.com" />
     <meta name="Robots" content="index, follow" />
@@ -124,7 +124,7 @@
 
 
     <!-- Schema -->
-    <script type="application/ld+json">
+    <%--<script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "BeautySalon",
@@ -168,17 +168,17 @@
             "https://samacosmeticclinic.com"
           ] 
         }
-    </script>
+    </script>--%>
 
     <!-- Open Graph -->
-    <meta property="og:type" content="business.business">
+    <%--<meta property="og:type" content="business.business">
     <meta property="og:image" content="https://samacosmeticclinic.com/images/logo.jpg">
     <meta property="og:description" content="Sama Cosmetic Clinic, cosmetic physicians and specialists in North America – and in the Greater Toronto Area – with comprehensive skills and experience in beauty. Botox and Dysport injection. Filler services and Mesogold for men and women. Get rid of signs of ageing">
     <meta property="business:contact_data:street_address" content="43 First Commerce Dr">
     <meta property="business:contact_data:locality" content="Aurora">
     <meta property="business:contact_data:region" content="ON">
     <meta property="business:contact_data:postal_code" content="L4G 0G2">
-    <meta property="business:contact_data:country_name" content="Canada">
+    <meta property="business:contact_data:country_name" content="Canada">--%>
 
 
     <meta property="og:locale" content="en_US" />
@@ -278,8 +278,56 @@
                     color: #fff;
                 }
 
+        .navbar-caption-edited {
+            line-height: 1.2rem !important;
+            padding-right: 2rem;
+            font-weight: 700;
+            white-space: normal;
+            vertical-align: -4px;
+            line-height: 3.125rem !important;
+        }
 
+        @media (min-width: 768px) {
+            .container-carol {
+                width:620px;
+            }
+            .container-fluid {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
 
+            .navbar-caption-edited {
+                font-size: 2rem !important;
+            }
+        }
+
+        @media (min-width:429px) and (max-width:768px)
+        {
+             .container-carol {
+                width:480px;
+                max-height: 680px !important;
+            }
+            .cards-carol {
+                height: 640px !important;
+            }
+
+            .navbar-caption-edited {
+                font-size: 2rem !important;
+            }
+        }
+
+        @media (max-width: 428px) {
+            .navbar-caption-edited {
+                font-size: 1.5rem !important;
+            }
+             .container-carol {
+                width:360px;
+                max-height: 850px !important;
+            }
+             .cards-carol {
+                height: 820px !important;
+            }
+        }
 
         @media only screen and (max-width: 990px) {
             .nav-link {
@@ -287,14 +335,12 @@
             }
 
             .social-list-top {
-
             }
 
             #menuItems {
                 display: none;
             }
         }
-
     </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -397,11 +443,11 @@
                     <div class="navbar-brand">
                         <span class="navbar-logo">
                             <a>
-                                <img src="images/logo.png" alt="Hoss Notarkesh" style="height: 3.8rem;">
+                                <img src="images/logo.png" alt="Hoss Notarkesh" style="height: 3.8rem;margin: 0 auto;">
                             </a>
                         </span>
                         <span class="navbar-caption-wrap">
-                            <a class="navbar-caption text-white display-4" href="default.aspx">HOSS NOTARKESH
+                            <a class="navbar-caption-edited text-white display-4" href="https://hossnotarkesh.com/">HOSS NOTARKESH
                     </a>
                         </span>
                     </div>
@@ -409,7 +455,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul id="menuItems" class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                         <li class="nav-item">
-                            <a class="nav-link link text-white display-4" href="default.aspx">HOME</a>
+                            <a class="nav-link link text-white display-4" href="https://hossnotarkesh.com/">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link text-white display-4" href="packages.aspx">PACKAGES</a>
@@ -436,8 +482,7 @@
                         <div class="soc-item">
                             <a href="https://www.facebook.com/notarkesh" target="_blank">
                                 <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
-                            </a>
-                        </div>
+                            </a></div>
                         <div class="soc-item">
                             <a href="https://www.youtube.com/channel/UC6WakK3nURwcaTBJ8YdaD7Q/videos" target="_blank">
                                 <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
@@ -472,7 +517,7 @@
         </asp:ContentPlaceHolder>
 
 
-        <section class="cid-qTkAaeaxX5" id="footer1-2">
+        <section class="cid-qTkAaeaxX5" id="footer1-2" style="z-index: 99;">
             <div class="container">
                 <div class="media-container-row content text-white">
                     <div class="col-12 col-md-2">
@@ -570,14 +615,16 @@
         <!-- Global Overlay End -->
 
         
+        <section class="display-7" style="padding: 0; align-items: center; justify-content: center; flex-wrap: wrap; align-content: center; display: flex; position: absolute; height: 4rem;width: 100%;">    
+            <p style="margin: 0; text-align: center;" class="display-7">© Copyright 2022 (www.Hossnotarkesh.com) - All Rights Reserved </p>
+        </section>
 
-        <section class="display-7" style="padding: 0; align-items: center; justify-content: center; flex-wrap: wrap; align-content: center; display: flex; position: relative; height: 4rem;">
-            <a href="https://mobiri.se/" style="flex: 1 1; height: 4rem; position: absolute; width: 100%; z-index: 1;">
-                <img alt="" style="height: 4rem;" src=""></a>
+        <section class="display-7" style="padding: 0; align-items: center; justify-content: center; flex-wrap: wrap; align-content: center; display: flex; position: relative; height: 4rem;top: -12rem;">
+            <a href="https://mobiri.se/" style="flex: 1 1; height: 4rem; position: absolute; width: 100%; z-index: 1;"></a>
             <p style="margin: 0; text-align: center;" class="display-7">© Copyright 2022 (www.Hossnotarkesh.com) - All Rights Reserved </p>
             <a style="display: none;" href="https://mobirise.com/website-design-software.html"></a>
-            <a style="z-index: 1" href="mailto:farhad.nic@yahoo.com">, Website development by Decoton Co.</a>
         </section>
+
 
         </form>
 

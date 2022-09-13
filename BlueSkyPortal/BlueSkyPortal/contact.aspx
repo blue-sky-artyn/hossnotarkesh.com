@@ -142,7 +142,7 @@
     <section data-bs-version="5.1" class="map2 cid-t6WEmEiw34" id="map2-t">
         <div>
             <div class="google-map">
-                <iframe frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2756.4350394142916!2d-79.45865668455139!3d46.30119697911975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d29aa898f4722b7%3A0x2e67edaf3b214d57!2s751%20Main%20St%20E%2C%20North%20Bay%2C%20ON%20P1B%201C2!5e0!3m2!1sen!2sca!4v1658463730451!5m2!1sen!2sca" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11025.740153452287!2d-79.456468!3d46.301197!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a1aa9f1a7e1a18f!2sHoss%20Notarkesh%20Executive%20Business%20Coaching!5e0!3m2!1sen!2sca!4v1659661610414!5m2!1sen!2sca" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" ></iframe>
             </div>
         </div>
     </section>

@@ -129,19 +129,129 @@
             font-size: 14px;
             padding: 1rem 1.5rem !important;
         }
+    </style>
+    <style>
+        .video-bg {
+            filter: blur(15px);
+        }
+        .video-main {
+            height: 80vh;
+        }
         
+        :root {
+            --sidenavbar: #00000085;
+        }
+
+        .nav-side-bar {
+            position: fixed;
+            z-index: 99;
+            top: 18%;
+        }
+        .nav-side-bar nav {
+            padding: 1rem;
+            background-color: var(--sidenavbar);
+        }
+        .nav-side-bar::after {
+            content: " ";
+            display: block;
+            white-space: nowrap;
+            width: 0;
+            height: 0;
+            border-top: 50px solid var(--sidenavbar);
+            border-right: 55px solid transparent;
+        }
+            .nav-side-bar::before {
+                content: " ";
+                display: block;
+                white-space: nowrap;
+                width: 0;
+                height: 0;
+                border-bottom: 50px solid var(--sidenavbar);
+                border-right: 55px solid transparent;
+            }
+            .nav-side-bar ul {
+                list-style: none;
+                padding-left: 0;
+                text-align: center;
+            }
+
+                .nav-side-bar ul > li {
+                    margin: 10px 0;
+                }
+
+                    .nav-side-bar ul > li > a {
+                        color: white;
+                        font-size: 22px;
+                    }
+                    .nav-side-bar ul > li > a > span:hover {
+                        color:gray;
+                        transition: color 0.5s
+                    }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
+<%--    <div class="nav-side-bar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://twitter.com/HNotarkesh" target="_blank">
+                        <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                    </a>
+                </li>
 
+                <li>
+                    <a href="https://www.facebook.com/notarkesh" target="_blank">
+                        <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/channel/UC6WakK3nURwcaTBJ8YdaD7Q/videos" target="_blank">
+                        <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/hossnotarkesh/" target="_blank">
+                        <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://ca.linkedin.com/in/hoss-notarkesh-b-sc-clc-mba-b4720ba7" target="_blank">
+                        <span class="socicon-linkedin socicon mbr-iconfont mbr-iconfont-social"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.tiktok.com/@hossnotarkesh" target="_blank">
+                        <span class="socicon-tiktok socicon mbr-iconfont mbr-iconfont-social"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://wa.me/14169313238" target="_blank">
+                        <span class="socicon-whatsapp socicon mbr-iconfont mbr-iconfont-social"></span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    --%>
     <%-- Slider --%>
-    <section class="cid-qTkA127IK8 mbr-fullscreen" id="header2-1" style="min-height: 85vh;">
+    <section class="cid-qTkA127IK8 mbr-fullscreen" id="header2-1" style="min-height: 63vh;">
 
+        <video autoplay muted loop class="video-bg">
+            <source src="assets/video/hoss360p.mp4" type="video/mp4">
+            <source src="assets/video/hoss360p.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
 
-        <video autoplay muted loop>
+        <video autoplay muted loop class="video-main">
             <source src="assets/video/hoss360p.mp4" type="video/mp4">
             <source src="assets/video/hoss360p.ogg" type="video/ogg">
             Your browser does not support the video tag.
@@ -410,7 +520,8 @@ How do I do that? It’s simple, I discover your Passion to overcome your weakne
                     <div class="avatar-placeholder">
                         <div class="centerize card-block">
                             <div class="avatar">
-                                <img src="images/face1.jpg" alt="" /></div>
+                                <img src="images/face1.jpg" alt="" />
+                            </div>
                         </div>
                         <div class="color-dark content-avatar">
                             <p>As your executive business coach I strategize a nimble and robust roadmap to achieve your goals. I design your strategic plan that is actionable with proven practices tailored to deliver the desired outcome. Your Strategic Coaching enables you to Focus on the most important part of the Manifestation which is Taking the steps toward your GOALS and leaving the Road-mapping and Strategizing to me. Everyone wants something. They want progress. They want things to be better in the future. They have big wish lists and dreams. But how many people do you know who are willing to do what it takes to achieve their goals by living their full potential?</p>
@@ -470,7 +581,8 @@ How do I do that? It’s simple, I discover your Passion to overcome your weakne
                     <div class="avatar-placeholder">
                         <div class="centerize card-block">
                             <div class="avatar">
-                                <img src="images/face1.jpg" alt="" /></div>
+                                <img src="images/face1.jpg" alt="" />
+                            </div>
                         </div>
                         <div class="color-dark content-avatar">
                             <p>As your executive business coach I strategize a nimble and robust roadmap to achieve your goals. I design your strategic plan that is actionable with proven practices tailored to deliver the desired outcome. Your Strategic Coaching enables you to Focus on the most important part of the Manifestation which is Taking the steps toward your GOALS and leaving the Road-mapping and Strategizing to me. Everyone wants something. They want progress. They want things to be better in the future. They have big wish lists and dreams. But how many people do you know who are willing to do what it takes to achieve their goals by living their full potential?</p>
@@ -507,7 +619,8 @@ How do I do that? It’s simple, I discover your Passion to overcome your weakne
                     <div class="avatar-placeholder">
                         <div class="centerize card-block">
                             <div class="avatar">
-                                <img src="images/face1.jpg" alt="" /></div>
+                                <img src="images/face1.jpg" alt="" />
+                            </div>
                         </div>
                         <div class="color-dark content-avatar">
                             <p>As your executive business coach I strategize a nimble and robust roadmap to achieve your goals. I design your strategic plan that is actionable with proven practices tailored to deliver the desired outcome. Your Strategic Coaching enables you to Focus on the most important part of the Manifestation which is Taking the steps toward your GOALS and leaving the Road-mapping and Strategizing to me. Everyone wants something. They want progress. They want things to be better in the future. They have big wish lists and dreams. But how many people do you know who are willing to do what it takes to achieve their goals by living their full potential?</p>
@@ -945,216 +1058,216 @@ How do I do that? It’s simple, I discover your Passion to overcome your weakne
 
 
         <%-- Success stories --%>
-
-
-
     </div>
 
 
 
     <style>
-        
-.input-carol {
-  display: none;
-}
+        .input-carol {
+            display: none;
+        }
 
-.card-carol {
-  position: absolute;
-  width: 60%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: transform .4s ease;
-  cursor: pointer;
-}
+        .card-carol {
+            position: absolute;
+            width: 60%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transition: transform .4s ease;
+            cursor: pointer;
+        }
 
-.container-carol {
-  width: 100%;
-  max-width: 800px;
-  max-height: 700px;
-  height: 100%;
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+        .container-carol {
+            /*max-width: 800px;*/
+            max-height: 700px;
+            height: 100%;
+            transform-style: preserve-3d;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            /*width: 65%;*/
+            margin: 0 auto;
+        }
 
-      width: 65%;
-    margin: 0 auto;
-}
+        .cards-carol {
+            position: relative;
+            width: 100%;
+            height: 560px;
+            margin-bottom: 20px;
+        }
 
-.cards-carol {
-  position: relative;
-  width: 100%;
-  height: 560px;
-  margin-bottom: 20px;
-}
+        .img-carol {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
 
-.img-carol {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
+        /*PREVIOS item*/
+        #item-1:checked ~ .cards #song-7,
+        #item-2:checked ~ .cards #song-1,
+        #item-3:checked ~ .cards #song-2,
+        #item-4:checked ~ .cards #song-3,
+        #item-5:checked ~ .cards #song-4,
+        #item-6:checked ~ .cards #song-5,
+        #item-7:checked ~ .cards #song-6 {
+            transform: translatex(-40%) scale(.8);
+            opacity: .4;
+            z-index: 0;
+        }
 
-/*PREVIOS item*/
-#item-1:checked ~ .cards #song-7,
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2,
-#item-4:checked ~ .cards #song-3, 
-#item-5:checked ~ .cards #song-4, 
-#item-6:checked ~ .cards #song-5, 
-#item-7:checked ~ .cards #song-6
-{
-  transform: translatex(-40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
-}
+        /*NEXT item*/
+        #item-1:checked ~ .cards #song-2,
+        #item-2:checked ~ .cards #song-3,
+        #item-3:checked ~ .cards #song-4,
+        #item-4:checked ~ .cards #song-5,
+        #item-5:checked ~ .cards #song-6,
+        #item-6:checked ~ .cards #song-7,
+        #item-7:checked ~ .cards #song-1 {
+            transform: translatex(40%) scale(.8);
+            opacity: .4;
+            z-index: 0;
+        }
 
-/*NEXT item*/
-#item-1:checked ~ .cards #song-2, 
-#item-2:checked ~ .cards #song-3, 
-#item-3:checked ~ .cards #song-4, 
-#item-4:checked ~ .cards #song-5, 
-#item-5:checked ~ .cards #song-6, 
-#item-6:checked ~ .cards #song-7, 
-#item-7:checked ~ .cards #song-1 
-{
-  transform: translatex(40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
-}
+        #item-1:checked ~ .cards #song-1,
+        #item-2:checked ~ .cards #song-2,
+        #item-3:checked ~ .cards #song-3,
+        #item-4:checked ~ .cards #song-4,
+        #item-5:checked ~ .cards #song-5,
+        #item-6:checked ~ .cards #song-6,
+        #item-7:checked ~ .cards #song-7,
+        #item-8:checked ~ .cards #song-8 {
+            transform: translatex(0) scale(1);
+            opacity: 1;
+            z-index: 1;
+            img
 
-#item-1:checked ~ .cards #song-1, 
-#item-2:checked ~ .cards #song-2, 
-#item-3:checked ~ .cards #song-3, 
-#item-4:checked ~ .cards #song-4, 
-#item-5:checked ~ .cards #song-5, 
-#item-6:checked ~ .cards #song-6, 
-#item-7:checked ~ .cards #song-7, 
-#item-8:checked ~ .cards #song-8
-{
-  transform: translatex(0) scale(1);
-  opacity: 1;
-  z-index: 1;
-  
-  img {
-    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-  }
-}
+        {
+            box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+        }
 
-.player {
-  background-color: #fff;
-  border-radius: 8px;
-  min-width: 320px;
-  padding: 16px 10px;
-}
+        }
 
-.upper-part {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-  height: 36px;
-  overflow: hidden;
-}
+        .player {
+            background-color: #fff;
+            border-radius: 8px;
+            min-width: 320px;
+            padding: 16px 10px;
+        }
 
-.play-icon{ margin-right: 10px; }
+        .upper-part {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            height: 36px;
+            overflow: hidden;
+        }
 
-.song-info {
-  width: calc(100% - 32px);
-  display: block;
-}
+        .play-icon {
+            margin-right: 10px;
+        }
 
-.song-info .title {
-  color: #403d40;
-  font-size: 14px;
-  line-height: 24px;
-}
+        .song-info {
+            width: calc(100% - 32px);
+            display: block;
+        }
 
-.sub-line {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
+            .song-info .title {
+                color: #403d40;
+                font-size: 14px;
+                line-height: 24px;
+            }
 
-.subtitle, .time {
-  font-size: 12px;
-  line-height: 16px;
-  color: #c6c5c6;
-}
+        .sub-line {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
 
-.time {
-  font-size: 12px;
-  line-height: 16px;
-  color: #a5a5a5;
-  font-weight: 500;
-  margin-left: auto;
-}
+        .subtitle, .time {
+            font-size: 12px;
+            line-height: 16px;
+            color: #c6c5c6;
+        }
 
-.progress-bar {
-  height: 3px;
-  width: 100%;
-  background-color: #e9efff;
-  border-radius: 2px;
-  overflow: hidden;
-}
+        .time {
+            font-size: 12px;
+            line-height: 16px;
+            color: #a5a5a5;
+            font-weight: 500;
+            margin-left: auto;
+        }
 
-.progress {
-  display: block;
-  position: relative;
-  width: 60%;
-  height: 100%;
-  background-color: #2992dc;
-  border-radius: 6px;
-}
+        .progress-bar {
+            height: 3px;
+            width: 100%;
+            background-color: #e9efff;
+            border-radius: 2px;
+            overflow: hidden;
+        }
 
-.info-area {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 30px;
-  transition: transform .4s ease-in;
-}
+        .progress {
+            display: block;
+            position: relative;
+            width: 60%;
+            height: 100%;
+            background-color: #2992dc;
+            border-radius: 6px;
+        }
 
-#item-2:checked ~ .player #test {
-  transform: translateY(0);
-}
+        .info-area {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 30px;
+            transition: transform .4s ease-in;
+        }
 
-#item-2:checked ~ .player #test  {
-  transform: translateY(-40px);
-}
+        #item-2:checked ~ .player #test {
+            transform: translateY(0);
+        }
 
-#item-3:checked ~ .player #test  {
-  transform: translateY(-80px);
-}
-#item-4:checked ~ .player #test  {
-  transform: translateY(-80px);
-}
-#item-5:checked ~ .player #test  {
-  transform: translateY(-80px);
-}
-#item-6:checked ~ .player #test  {
-  transform: translateY(-80px);
-}
-#item-7:checked ~ .player #test  {
-  transform: translateY(-80px);
-}
-#item-8:checked ~ .player #test  {
-  transform: translateY(-80px);
-}
-.content-wrap {
-    padding: 2rem;
-}
+        #item-2:checked ~ .player #test {
+            transform: translateY(-40px);
+        }
 
-.content-wrap p {
-    text-align: justify;
-}
+        #item-3:checked ~ .player #test {
+            transform: translateY(-80px);
+        }
 
+        #item-4:checked ~ .player #test {
+            transform: translateY(-80px);
+        }
+
+        #item-5:checked ~ .player #test {
+            transform: translateY(-80px);
+        }
+
+        #item-6:checked ~ .player #test {
+            transform: translateY(-80px);
+        }
+
+        #item-7:checked ~ .player #test {
+            transform: translateY(-80px);
+        }
+
+        #item-8:checked ~ .player #test {
+            transform: translateY(-80px);
+        }
+
+        .content-wrap {
+            padding: 2rem;
+        }
+
+            .content-wrap p {
+                text-align: justify;
+            }
     </style>
 
-<%--        <section class="clients cid-t6qHTcYS0k" data-interval="false" id="clients-f555">
+    <%--        <section class="clients cid-t6qHTcYS0k" data-interval="false" id="clients-f555">
             <div class="container mb-5">
                 <div class="media-container-row">
                     <div class="col-12 align-center">
@@ -1232,13 +1345,13 @@ How do I do that? It’s simple, I discover your Passion to overcome your weakne
         </section>
 
 
---%>
+    --%>
 
 
 
 
     <%-- google review --%>
-    
+
     <style>
         .cid-t6qHTcYS0k555 .carousel-item1 .wrap-img1 img {
             max-height: 260px !important;
@@ -1253,11 +1366,10 @@ How do I do that? It’s simple, I discover your Passion to overcome your weakne
                 width: 70% !important;
             }
         }
-
     </style>
 
 
-<%--
+    <%--
 
 <section class="clients cid-t6qHTcYS0k555" data-interval="false" id="clients-f2">
         <div class="container mb-5">
@@ -1359,7 +1471,7 @@ How do I do that? It’s simple, I discover your Passion to overcome your weakne
     </div>
 </section>
 
---%>
+    --%>
 
 
 
@@ -1368,103 +1480,108 @@ How do I do that? It’s simple, I discover your Passion to overcome your weakne
 
     <%-- Google review 2 --%>
     <style>
- 
+        main#carousel {
+            grid-row: 1 / 2;
+            grid-column: 1 / 8;
+            width: 100vw;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transform-style: preserve-3d;
+            perspective: 600px;
+            --items: 5;
+            --middle: 3;
+            --position: 1;
+            pointer-events: none;
+        }
 
-main#carousel {
-  grid-row: 1 / 2;
-  grid-column: 1 / 8;
-  width: 100vw;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  perspective: 600px;
-  --items: 5;
-  --middle: 3;
-  --position: 1;
-  pointer-events: none;
-}
+        .div-item {
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            background-color: coral;
+            --r: calc(var(--position) - var(--offset));
+            --abs: max(calc(var(--r) * -1), var(--r));
+            transition: all 0.25s linear;
+            transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+            z-index: calc((var(--position) - var(--abs)));
+        }
 
-.div-item {
-  position: absolute;
-  width: 300px;
-  height: 400px;
-  background-color: coral;
-  --r: calc(var(--position) - var(--offset));
-  --abs: max(calc(var(--r) * -1), var(--r));
-  transition: all 0.25s linear;
-  transform: rotateY(calc(-10deg * var(--r)))
-    translateX(calc(-300px * var(--r)));
-  z-index: calc((var(--position) - var(--abs)));
-}
+            .div-item:nth-of-type(1) {
+                --offset: 1;
+                background-color: #90f1ef;
+            }
 
-.div-item:nth-of-type(1) {
-  --offset: 1;
-  background-color: #90f1ef;
-}
-.div-item:nth-of-type(2) {
-  --offset: 2;
-  background-color: #ff70a6;
-}
-.div-item:nth-of-type(3) {
-  --offset: 3;
-  background-color: #ff9770;
-}
-.div-item:nth-of-type(4) {
-  --offset: 4;
-  background-color: #ffd670;
-}
-.div-item:nth-of-type(5) {
-  --offset: 5;
-  background-color: #e9ff70;
-}
+            .div-item:nth-of-type(2) {
+                --offset: 2;
+                background-color: #ff70a6;
+            }
 
-.input-review:nth-of-type(1) {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(1):checked ~ main#carousel {
-  --position: 1;
-}
+            .div-item:nth-of-type(3) {
+                --offset: 3;
+                background-color: #ff9770;
+            }
 
-input:nth-of-type(2) {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(2):checked ~ main#carousel {
-  --position: 2;
-}
+            .div-item:nth-of-type(4) {
+                --offset: 4;
+                background-color: #ffd670;
+            }
 
-input:nth-of-type(3) {
-  grid-column: 4 /5;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(3):checked ~ main#carousel {
-  --position: 3;
-}
+            .div-item:nth-of-type(5) {
+                --offset: 5;
+                background-color: #e9ff70;
+            }
 
-input:nth-of-type(4) {
-  grid-column: 5 / 6;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(4):checked ~ main#carousel {
-  --position: 4;
-}
+        .input-review:nth-of-type(1) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
 
-input:nth-of-type(5) {
-  grid-column: 6 / 7;
-  grid-row: 2 / 3;
-}
-input:nth-of-type(5):checked ~ main#carousel {
-  --position: 5;
-}
+        input:nth-of-type(1):checked ~ main#carousel {
+            --position: 1;
+        }
 
+        input:nth-of-type(2) {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+
+            input:nth-of-type(2):checked ~ main#carousel {
+                --position: 2;
+            }
+
+        input:nth-of-type(3) {
+            grid-column: 4 /5;
+            grid-row: 2 / 3;
+        }
+
+            input:nth-of-type(3):checked ~ main#carousel {
+                --position: 3;
+            }
+
+        input:nth-of-type(4) {
+            grid-column: 5 / 6;
+            grid-row: 2 / 3;
+        }
+
+            input:nth-of-type(4):checked ~ main#carousel {
+                --position: 4;
+            }
+
+        input:nth-of-type(5) {
+            grid-column: 6 / 7;
+            grid-row: 2 / 3;
+        }
+
+            input:nth-of-type(5):checked ~ main#carousel {
+                --position: 5;
+            }
     </style>
 
 
-<%--    <section class="clients cid-t6qHTcYS0k" data-interval="false" id="clients-f22">
+    <%--    <section class="clients cid-t6qHTcYS0k" data-interval="false" id="clients-f22">
         <div class="container mb-5">
             <div class="media-container-row">
                 <div class="col-12 align-center">
@@ -1494,18 +1611,25 @@ input:nth-of-type(5):checked ~ main#carousel {
     </section>--%>
 
     <%-- Google Review --%>
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-ad90be6c-bd08-4e22-abc2-7bad395dcb6d"></div>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-df96b72a-4fac-4cb6-9999-e43ae1794c43"></div>
 
     <%-- Whatsapp button --%>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-9a93409a-9a57-414f-88dc-ffad6b5588a9"></div>
-
-
+    <div class="elfsight-app-d4b336bc-9cab-4d60-834f-ffb53ffd2439"></div>
 
     <div style="margin-bottom: 3rem;">
-
     </div>
+
+    <section data-bs-version="5.1" class="map2 cid-t6WEmEiw34" id="map2-t">
+        <div>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11025.740153452287!2d-79.456468!3d46.301197!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a1aa9f1a7e1a18f!2sHoss%20Notarkesh%20Executive%20Business%20Coaching!5e0!3m2!1sen!2sca!4v1659661610414!5m2!1sen!2sca" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
 
     <style>
         .pic-testimonial {
@@ -1520,18 +1644,18 @@ input:nth-of-type(5):checked ~ main#carousel {
             .pic-testimonial img {
                 border-radius: 50%;
             }
-        
+
         /* Remove ads */
         .llyszt div a {
             display: none !important;
         }
+
         .kPOGIE a[href*="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=localhost:62679&utm_campaign=free-widget"],
-        .kPOGIE a[href*="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=hossnotarkesh.com&utm_campaign=free-widget"]
-        {
+        .kPOGIE a[href*="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=hossnotarkesh.com&utm_campaign=free-widget"] {
             display: none !important;
         }
+
         .lfmUON a {
-         
         }
     </style>
 
@@ -1566,12 +1690,12 @@ input:nth-of-type(5):checked ~ main#carousel {
     <%-- RUN MODAL BY SCRIPT --%>
     <script>
         function runModal() {
-            $('#myModal').modal('toggle');
+                $('#myModal').modal('toggle');
 
-            //$('#myModal').modal('show')
-            //$('#myModal').modal('hide')
-            //$('#myModal').modal('dispose')  Destroys an element’s modal.
-        }
+                //$('#myModal').modal('show')
+                //$('#myModal').modal('hide')
+                //$('#myModal').modal('dispose')  Destroys an element’s modal.
+            }
     </script>
 </asp:Content>
 

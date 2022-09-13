@@ -109,3 +109,21 @@
 .btn {
     text-shadow: grey 1px 1px !important;
 }
+
+@media (min-width: 768px) {
+    .container-fluid {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .navbar-caption {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 428px) {
+    .navbar-caption {
+        font-size: 1.5rem !important;
+    }
+}
+

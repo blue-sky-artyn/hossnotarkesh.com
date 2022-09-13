@@ -377,9 +377,11 @@ public partial class _Default : System.Web.UI.Page
                         boxContent += "<h2 style='text-align: center;width: 75%;font-weight: bold;margin: 0 auto;line-height: 3rem;'>" + dv[i]["title"] + "</h2>";
                     }
                     boxContent += "<hr class='line' />";
-                    if (dv[i]["detail"] != null || dv[i]["detail"] != "")
+                    if (dv[i]["detail"].ToString().Length > 0)
+                    {
                         boxContent += "<p class='mbr-text align-center mbr-fonts-style my-4 display-5'>" + dv[i]["detail"] + "</p>";
-                    boxContent += "<hr class='line' />";
+                        boxContent += "<hr class='line' />";
+                    }
                     sectionsAddedStr += boxContent;
                     sectionsAddedStr += homeElementsGrpTbl[0].closeTag;
                     break;
@@ -438,7 +440,7 @@ public partial class _Default : System.Web.UI.Page
                     for (int b = 0; b < (servciesTbl.Count / 2); b++)
                     {
                         servicesStr += "<div class='card pl-3 pr-3 pb-5' style='text-align: center;'><div class='mbr-card-img-title'><div class='card-img pb-3' style='text-align: center;'>" +
-                            "<img src='" + servciesTbl[b].coverPic + "' alt='" + servciesTbl[b].ServiceTitle + "' style='width: 40%; margin: 0 auto;' />" +
+                            "<img src='" + servciesTbl[b].coverPic + "' alt='" + servciesTbl[b].ServiceTitle + "' style='width: 100%; margin: 0 auto;' />" +
                             "</div><div class='mbr-crt-title'>" +
                             "<h4 class='card-title py-2 mbr-crt-title mbr-fonts-style display-7' style='line-height: 35px;'>" + servciesTbl[b].ServiceTitle + "</h4>" +
                             "</div></div><div class='card-box'>" +
@@ -466,7 +468,7 @@ public partial class _Default : System.Web.UI.Page
                         endPoint = servciesTbl.Count - 1;
                     }
 
-                    servicesStr += "<div class='mbr-figure m-auto' style='width: 50%;''><img src='assets/images/background6.jpg' alt='' title=''>";
+                    servicesStr += "<div class='mbr-figure m-auto' style='width: 50%;''><img src='assets/images/business executive.jpg' alt='' title=''>";
 
 
 
@@ -502,7 +504,7 @@ public partial class _Default : System.Web.UI.Page
                     for (int b = (servciesTbl.Count / 2); b < endPoint; b++)
                     {
                         servicesStr += "<div class='card pl-3 pr-3 pb-5' style='text-align: center;'><div class='mbr-card-img-title'><div class='card-img pb-3' style='text-align: center;'>" +
-                           "<img src='" + servciesTbl[b].coverPic + "' alt='" + servciesTbl[b].ServiceTitle + "' style='width: 40%; margin: 0 auto;' />" +
+                           "<img src='" + servciesTbl[b].coverPic + "' alt='" + servciesTbl[b].ServiceTitle + "' style='width: 100%; margin: 0 auto;' />" +
                            "</div><div class='mbr-crt-title'>" +
                            "<h4 class='card-title py-2 mbr-crt-title mbr-fonts-style display-7' style='line-height: 35px;'>" + servciesTbl[b].ServiceTitle + "</h4>" +
                            "</div></div><div class='card-box'>" +
@@ -569,7 +571,7 @@ public partial class _Default : System.Web.UI.Page
                     
                     for (int L = 0; L < testimonialCar1Tbl.Count; L++)
                     {
-                        testimonialStr += " <label class='card card-carol' for='item-" + (L + 1).ToString() + "' id='song-" + (L + 1).ToString() + "'>";
+                        testimonialStr += " <label class='card card-carol' for='item-" + (L + 1).ToString() + "' id='song-" + (L + 1).ToString() + "' style='width: 85%;'>";
                         testimonialStr += "<div class='img-carol'>" +
                            "<div class='media-container-row'><div class='col-md-12'><div class='card-wrap'>" +
                            "<div class='pic-testimonial'>" +
@@ -595,6 +597,18 @@ public partial class _Default : System.Web.UI.Page
 
                     sectionsAddedStr += homeElementsGrpTbl[0].closeTag;
 
+                    break;
+                case "Grid Multiple":
+                    sectionsAddedStr += homeElementsGrpTbl[0].openTag;
+                    string gridStr = "";
+                    gridStr += "<div class='mbr-section-head' style='text-align: center;'>";
+                    gridStr += "<h2 class='mbr-section-title pb-3 mbr-fonts-style display-2'>" + dv[i]["title"] + "</h2>";
+                    gridStr += "</div>";
+                    gridStr += "<div class='row justify-content-center mt-4' style='width: 100%;'>";
+                    gridStr += dv[i]["detail"];
+                    gridStr += "</div>";
+                    sectionsAddedStr += gridStr;
+                    sectionsAddedStr += homeElementsGrpTbl[0].closeTag;
                     break;
 
                 default:
