@@ -13,6 +13,15 @@
                 padding-right: 0.6rem;
             }
     </style>
+    
+
+    <%-- Ecardify --%>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="https://ecardify.io/css/videojs/all.css">
+	<link rel="stylesheet" href="https://ecardify.io/css/page.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+	<style>.title{text-align:center;font-size:1.2em;margin:2em}.wrapper{width:500px;margin:2em auto} textarea{width:100%;height:120px;display:block;box-sizing:border-box} input{width:100%;display:block;margin-top:0.5em} .note{text-align:center;font-size:0.8em;margin-top:3em}</style>
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -51,6 +60,23 @@
                             <div class="col-12 form-group mb-3" data-for="textarea">
                                 <textarea id="msgInputHtml" runat="server" name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" ></textarea>
                             </div>
+
+                            <script src="https://ecardify.io/js/videojs/video.min.js"></script>
+                            <script src="https://ecardify.io/js/videojs/record.js"></script>
+                            <script src="https://ecardify.io/js/ecardify-1.1.js"></script>
+                            <script>
+                                (function () {
+                                    "use strict";
+                                    window.ecardify.init({
+                                        subscription: "9606545b-116e-491c-ab5b-b04425b7b43d",
+                                        recorderImpl: "videojs-record", action: "page", offerEncryption: false, autoEngage: true, submission: "final"
+                                    });
+                                }());
+                            </script>
+
+
+
+
                             <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
                                 <asp:Button ID="btnSend" runat="server" class="btn btn-primary display-4" Text="Send message" OnClick="btnSend_Click" />
                             </div>
