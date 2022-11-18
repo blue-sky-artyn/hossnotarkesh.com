@@ -10,6 +10,8 @@ using Cruder.Core;
 using System.Linq;
 using System.Web.Services.Description;
 using System.Data;
+using System.Net.Mail;
+using System.Net;
 
 public partial class _Default : System.Web.UI.Page
 {
@@ -23,7 +25,7 @@ public partial class _Default : System.Web.UI.Page
 
 
 
-        #region fetchin items
+        #region fetching items
         tblHomeElementsGroupCollection homeElementsGrpTbl = new tblHomeElementsGroupCollection();
 
         tblHomeElementCollection homeElementsTbl = new tblHomeElementCollection();
@@ -436,10 +438,10 @@ public partial class _Default : System.Web.UI.Page
                     string servicesStr = "";
 
                     #region Right side
-                    servicesStr += "<div class='block-content align-right'>";
-                    for (int b = 0; b < (servciesTbl.Count / 2); b++)
+                    servicesStr += "<div class='block-content align-right' style='margin-top: 7rem;'>";
+                    for (int b = 0; b < 2; b++)
                     {
-                        servicesStr += "<div class='card pl-3 pr-3 pb-5' style='text-align: center;'><div class='mbr-card-img-title'><div class='card-img pb-3' style='text-align: center;'>" +
+                        servicesStr += "<div class='card pl-3 pr-3 pb-5' style='margin-bottom: 7rem;text-align: center;'><div class='mbr-card-img-title'><div class='card-img pb-3' style='text-align: center;'>" +
                             "<img src='" + servciesTbl[b].coverPic + "' alt='" + servciesTbl[b].ServiceTitle + "' style='width: 100%; margin: 0 auto;' />" +
                             "</div><div class='mbr-crt-title'>" +
                             "<h4 class='card-title py-2 mbr-crt-title mbr-fonts-style display-7' style='line-height: 35px;'>" + servciesTbl[b].ServiceTitle + "</h4>" +
@@ -463,33 +465,46 @@ public partial class _Default : System.Web.UI.Page
                     int endPoint = servciesTbl.Count;
                     servicesStr = "";
 
-                    if (servciesTbl.Count % 2 != 0)
-                    {
-                        endPoint = servciesTbl.Count - 1;
-                    }
+                    servicesStr += "<div class='mbr-figure m-auto' style='width: 50%;''>";
 
-                    servicesStr += "<div class='mbr-figure m-auto' style='width: 50%;''><img src='assets/images/business executive.jpg' alt='' title=''>";
+                    #region top of pic
+                    servicesStr += "<div class='card pl-3 pr-3 pb-5 size-middle' style='text-align: center;margin: 0 auto;'><div class='mbr-card-img-title'><div class='card-img pb-3' style='text-align: center;'>" +
+                      "<img src='" + servciesTbl[5].coverPic + "' alt='" + servciesTbl[5].ServiceTitle + "' style='margin: 0 auto;' />" +
+                      "</div><div class='mbr-crt-title'>" +
+                      "<h4 class='card-title py-2 mbr-crt-title mbr-fonts-style display-7' style='line-height: 35px;'>" + servciesTbl[5].ServiceTitle + "</h4>" +
+                      "</div></div><div class='card-box'>" +
+                      "<p class='mbr-text mbr-section-text mbr-fonts-style display-7'>";
 
+                    if (servciesTbl[5].ServiceDetail.Length > 270)
+                        servicesStr += servciesTbl[5].ServiceDetail.Substring(0, 570) + " ...";
+                    else
+                        servicesStr += servciesTbl[5].ServiceDetail;
 
+                    servicesStr += "</p>" +
+                       "<a class='btn btn-md btn-secondary display-4' href='services.aspx?servId=" + servciesTbl[5].id + "' style='margin-left: 0 !important;background-color: #0b86ce !important;padding: 10px 10px;'>Read more</a>" +
+                       "</div></div>";
+                    #endregion
 
+                    //middle pic
+                    servicesStr += "<img src='assets/images/business executive.jpg' alt='' title=''>";
 
-                    servicesStr += "<div class='card pl-3 pr-3 pt-5' style='text-align: center;width: 65%;margin: 0 auto;'><div class='mbr-card-img-title'><div class='card-img pb-3' style='text-align: center;'>" +
-                       "<img src='" + servciesTbl[servciesTbl.Count -1].coverPic + "' alt='" + servciesTbl[servciesTbl.Count - 1].ServiceTitle + "' style='width: 40%; margin: 0 auto;' />" +
+                    #region bottom of pic
+                    servicesStr += "<div class='card pl-3 pr-3 pt-5 size-middle' style='text-align: center;margin: 0 auto;'><div class='mbr-card-img-title'><div class='card-img pb-3' style='text-align: center;'>" +
+                       "<img src='" + servciesTbl[4].coverPic + "' alt='" + servciesTbl[4].ServiceTitle + "' style='margin: 0 auto;' />" +
                        "</div><div class='mbr-crt-title'>" +
-                       "<h4 class='card-title py-2 mbr-crt-title mbr-fonts-style display-7' style='line-height: 35px;'>" + servciesTbl[servciesTbl.Count - 1].ServiceTitle + "</h4>" +
+                       "<h4 class='card-title py-2 mbr-crt-title mbr-fonts-style display-7' style='line-height: 35px;'>" + servciesTbl[4].ServiceTitle + "</h4>" +
                        "</div></div><div class='card-box'>" +
                        "<p class='mbr-text mbr-section-text mbr-fonts-style display-7'>";
 
-                    if (servciesTbl[servciesTbl.Count - 1].ServiceDetail.Length > 270)
-                        servicesStr += servciesTbl[servciesTbl.Count - 1].ServiceDetail.Substring(0, 270) + " ...";
+                    if (servciesTbl[4].ServiceDetail.Length > 270)
+                        servicesStr += servciesTbl[4].ServiceDetail.Substring(0, 270) + " ...";
                     else
-                        servicesStr += servciesTbl[servciesTbl.Count - 1].ServiceDetail;
+                        servicesStr += servciesTbl[4].ServiceDetail;
 
                     servicesStr += "</p>" +
-                       "<a class='btn btn-md btn-secondary display-4' href='services.aspx?servId=" + servciesTbl[servciesTbl.Count - 1].id + "' style='margin-left: 0 !important;background-color: #0b86ce !important;padding: 10px 10px;'>Read more</a>" +
+                       "<a class='btn btn-md btn-secondary display-4' href='services.aspx?servId=" + servciesTbl[4].id + "' style='margin-left: 0 !important;background-color: #0b86ce !important;padding: 10px 10px;'>Read more</a>" +
                        "</div></div>";
-
-
+                    #endregion
 
                     servicesStr += "</div>";
                     
@@ -499,11 +514,11 @@ public partial class _Default : System.Web.UI.Page
 
                     #region Left Side
                     servicesStr = "";
-                    servicesStr += "<div class='block-content align-left'>";
+                    servicesStr += "<div class='block-content align-left' style='margin-top: 7rem;'>";
 
-                    for (int b = (servciesTbl.Count / 2); b < endPoint; b++)
+                    for (int b = 2; b < 4; b++)
                     {
-                        servicesStr += "<div class='card pl-3 pr-3 pb-5' style='text-align: center;'><div class='mbr-card-img-title'><div class='card-img pb-3' style='text-align: center;'>" +
+                        servicesStr += "<div class='card pl-3 pr-3 pb-5' style='margin-bottom: 7rem;text-align: center;'><div class='mbr-card-img-title'><div class='card-img pb-3' style='text-align: center;'>" +
                            "<img src='" + servciesTbl[b].coverPic + "' alt='" + servciesTbl[b].ServiceTitle + "' style='width: 100%; margin: 0 auto;' />" +
                            "</div><div class='mbr-crt-title'>" +
                            "<h4 class='card-title py-2 mbr-crt-title mbr-fonts-style display-7' style='line-height: 35px;'>" + servciesTbl[b].ServiceTitle + "</h4>" +
@@ -602,7 +617,7 @@ public partial class _Default : System.Web.UI.Page
                     sectionsAddedStr += homeElementsGrpTbl[0].openTag;
                     string gridStr = "";
                     gridStr += "<div class='mbr-section-head' style='text-align: center;'>";
-                    gridStr += "<h2 class='mbr-section-title pb-3 mbr-fonts-style display-2'>" + dv[i]["title"] + "</h2>";
+                    //gridStr += "<h2 class='mbr-section-title pb-3 mbr-fonts-style display-2'>" + dv[i]["title"] + "</h2>";
                     gridStr += "</div>";
                     gridStr += "<div class='row justify-content-center mt-4' style='width: 100%;'>";
                     gridStr += dv[i]["detail"];
@@ -650,7 +665,6 @@ public partial class _Default : System.Web.UI.Page
         sliderHtml.InnerHtml = sliderStr;
 
         #endregion
-
 
         #region seperated items
 
@@ -917,10 +931,6 @@ public partial class _Default : System.Web.UI.Page
 
         #endregion
 
-
-        
-
-
         #region Rss news
         string newsString = "";
         string RssFeedUrl;
@@ -967,6 +977,21 @@ public partial class _Default : System.Web.UI.Page
         popupContentHtml.InnerHtml = popPageStr;
         #endregion
 
+        #region special offer (popup section)
+        if (!IsPostBack)
+        {
+            if (20230101 > dateNow)
+            {
+                //exampleModalLongTitle.InnerText = popUpPageTbl[i].popupTitle;
+
+                //popPageStr += popUpPageTbl[i].popupDetails;
+
+                //popupFooterHtml.InnerText = "This promotion will end on " + popUpPageTbl[i].EndDate;
+
+                ScriptManager.RegisterStartupScript(this, GetType(), "myfunction", "runModalPopup();", true);
+            }
+        }
+        #endregion
 
         #region Appointments Hours
 
@@ -1045,7 +1070,6 @@ public partial class _Default : System.Web.UI.Page
 
     }
 
-
     private string PopulateRssFeed(string rssLink)
     {
         string RssFeedUrl = rssLink;
@@ -1098,7 +1122,6 @@ public partial class _Default : System.Web.UI.Page
         }
     }
 
-
     protected void btnSaubscribe_Click(object sender, EventArgs e)
     {
         tblMemberOfDailyEmail subEmailTbl = new tblMemberOfDailyEmail();
@@ -1125,5 +1148,70 @@ public partial class _Default : System.Web.UI.Page
 
         }
 
+    }
+
+    protected void btnSendEmail_Click(object sender, EventArgs e)
+    {
+        tblEmailSendDetailsCollection emailDetTbl = new tblEmailSendDetailsCollection();
+        emailDetTbl.ReadList();
+
+        #region Sending Email
+
+        string smtpText = emailDetTbl[0].smtp;
+        int portNumber = Convert.ToInt32(emailDetTbl[0].portNumber);
+        string userName = emailDetTbl[0].emailAddr;
+        string password = emailDetTbl[0].password;
+
+        try
+        {
+            SmtpClient smtp = new SmtpClient(smtpText, portNumber);
+            smtp.EnableSsl = true;
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            smtp.UseDefaultCredentials = false;
+
+            smtp.Credentials = new NetworkCredential(userName, password);
+            MailMessage message = new MailMessage();
+            message.To.Add("hoss@hossnotarkesh.com");
+            //message.To.Add("i8net2000@yahoo.com");
+            //message.Bcc.Add("i8net2000@yahoo.com");
+            message.Bcc.Add("erfan@hossnotarkesh.com");
+            
+
+            //string toAddress = "";
+            //foreach (var item in toAddress.Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries))                //Read from a string with ; as delimiter and split them and put them i an array
+
+
+
+            message.From = new MailAddress(userName);
+            message.Subject = "BOOK A ZEN TEAM BUILDING WORKSHOP FOR " + txtNamePopup.Value;
+            message.Body = "This is a request for appointment for Mr/Mrs" + txtNamePopup.Value + " by the email address of " + txtEmailPopup.Value;
+
+            smtp.Send(message);
+
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "popup", "alert('Email has been sent, we get to you soon');", true);
+            //Response.Redirect("contact.aspx.aspx");
+            //lblErrorHtml.InnerText = "your email has been sent sucessfully.";
+        }
+        catch (Exception ex)
+        {
+
+            //lblErrorHtml.InnerText = "Email has not been sent because " + ex.Message;
+        }
+
+        #endregion
+
+        #region save as a member of daily email
+        //tblMemberOfDailyEmail dailyMemberTbl = new tblMemberOfDailyEmail()
+        //{
+        //    memberEmail = txtEmailPopup.Value,
+        //    memberExpDate = DateTime.Now.AddYears(1).ToString("yyyy-MM-dd"),
+        //    memberInsDate = DateTime.Now.ToString("yyyy-MM-dd"),
+        //    memberName = txtNamePopup.Value,
+        //    memberRequestToDea = "",
+        //    allow = "1",
+        //    memberSurname = txtNamePopup.Value,
+        //};
+        //dailyMemberTbl.Create();
+        #endregion
     }
 }

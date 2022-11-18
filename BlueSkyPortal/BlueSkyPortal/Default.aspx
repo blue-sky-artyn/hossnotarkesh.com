@@ -187,6 +187,31 @@
                         color:gray;
                         transition: color 0.5s
                     }
+        .backgroud-gray {
+                background-color: #f3f4f6 !important;
+        }
+
+        .size-middle {
+                width: 65% !important;
+            }
+    </style>
+    <style>
+        @media only screen and (min-width: 1200px) {
+            .text-alignment {
+                padding: 1rem 8.2rem !important;
+            }
+        }
+
+        @media only screen and (max-width: 1199px) {
+            .text-alignment {
+                padding: 0rem 1rem !important;
+            }
+        }
+        @media only screen and (max-width: 991px) {
+            .size-middle {
+                width: 100% !important;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </asp:Content>
@@ -1687,6 +1712,72 @@ How do I do that? It’s simple, I discover your Passion to overcome your weakne
     </div>
 
 
+    <style>
+        .header-style {
+            font-size: 2rem;
+            font-weight: bolder;
+            padding: 0.7rem 0;
+            font-family: times new roman;
+            text-align: center;
+        }
+        .picture-style {
+            padding: 1.3rem;
+        }
+
+            .picture-style > img {
+                box-shadow: grey 20px -18px;
+            }
+
+        .under-line-input {
+            box-shadow: none;
+            border-bottom: 1px solid #495057 !important;
+            border-radius: 0 !important;
+        }
+
+       
+        .btn-send {
+            width: 100%;
+            border-radius: 0;
+            background-color: black !important;
+            margin: 1.75rem 0px 0 0;
+            padding: 0.5rem 1rem;
+            border-color: black !important;
+        }
+    </style>
+
+    <div class="modal fade" id="ModalPopup" tabindex="-1" role="dialog" aria-labelledby="CenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div id="Submition" clientidmode="Static" runat="server" class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="text-alignment col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <h5 class="header-style modal-title">BOOK YOUR <br /> ZEN <br /> TEAM BUILDING <br /> WORKSHOP</h5>
+                                <div class="form-group">
+                                    <input type="text" class="under-line-input form-control" id="txtNamePopup" runat="server" aria-describedby="emailHelp" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="under-line-input form-control" id="txtEmailPopup" runat="server" aria-describedby="emailHelp" placeholder="Email">
+                                </div>
+                                <asp:Button ID="btnSend" class="btn-send btn btn-primary" runat="server" Text="Send" OnClick="btnSendEmail_Click" />
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="picture-style">
+                                    <img src="images/pop up.jpeg" alt="hoss notarkesh" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <%--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">--%>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <%-- RUN MODAL BY SCRIPT --%>
     <script>
         function runModal() {
@@ -1696,6 +1787,14 @@ How do I do that? It’s simple, I discover your Passion to overcome your weakne
                 //$('#myModal').modal('hide')
                 //$('#myModal').modal('dispose')  Destroys an element’s modal.
             }
+    </script>
+    <script>
+        function runModalPopup() {
+            $('#ModalPopup').modal('toggle');
+            //$('#myModal').modal('show')
+            //$('#myModal').modal('hide')
+            //$('#myModal').modal('dispose')  Destroys an element’s modal.
+        }
     </script>
 </asp:Content>
 
